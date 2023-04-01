@@ -1,15 +1,12 @@
-/////////////////////navigations////////////
-////////////toggling music player
-
 const musicPlayerSection = document.querySelector('.music-player-section');
 
 let clickCount = 1;
 
 musicPlayerSection.addEventListener('click', () => {
     // checking for double click manually idk why default dbclick event was not working with this project If you know what could the problem Kindly tell me in the discussion below
-    if(clickCount >= 2){
+    if(clickCount >= 1){
         musicPlayerSection.classList.add('active');
-        clickCount = 1;
+        clickCount = 0;
         return;
     }
     clickCount++;
@@ -74,9 +71,7 @@ const setMusic = (i) => {
     seekBar.value = 0;
     let song = songs[i];
     currentMusic = i;
-
     music.src = song.path;
-
     songName.innerHTML = song.name;
     artistName.innerHTML = song.artist;
     coverImage.src = song.cover;

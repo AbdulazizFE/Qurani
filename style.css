@@ -273,10 +273,12 @@ display: none;
 
 .back-btn {
   left: 40px;
+  cursor: pointer;
 }
 
 .nav-btn {
   right: 40px;
+  cursor: pointer;
 }
 
 /* volume button */
@@ -471,7 +473,7 @@ ul li {
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid #00f963;
+
 }
 
 
@@ -512,4 +514,8 @@ ul li {
 .footer ul li a:hover {
 
   color: #0080ff;
+}
+
+.fa-forward, .fa-backward,.fa-play, .fa-rotate-right,.fa-volume-up,.volume-slider{
+  cursor: pointer;
 }
